@@ -36,7 +36,8 @@ export default function Header({
           </div>
         </div>
         <div className="flex basis-6/12 flex-row items-center justify-end">
-        <Link href='/'>Home</Link>
+        
+        <Link href='/'><button>Home</button></Link>
         
           {/* balance */}
           {wallet && (
