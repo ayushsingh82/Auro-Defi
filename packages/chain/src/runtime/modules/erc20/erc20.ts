@@ -7,6 +7,14 @@ import {
 import { State, StateMap, assert } from "@proto-kit/protocol";
 import { Field, PublicKey, UInt64, Provable } from "o1js";
 
+export const errors = {
+    senderNotFrom: () => "Sender does not match 'from'",
+    userDoesNotHave: (tokenSymbol: Field) =>
+        "User does not have " + tokenSymbol + " balance",
+    fromBalanceInsufficient: () => "From balance is insufficient",
+    burnBalanceInsufficient: () => "Burn balance is insufficient",
+};
+
 @runtimeModule()
 export class ERC20 extends RuntimeModule<Record<string, never>> {
     @state() public balances = StateMap.from<PublicKey, UInt64>(
