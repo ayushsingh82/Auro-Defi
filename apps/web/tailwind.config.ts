@@ -25,6 +25,7 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+
   theme: {
     container: {
       center: true,

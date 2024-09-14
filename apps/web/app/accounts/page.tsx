@@ -78,62 +78,40 @@ function NavbarDemo() {
 
 const page = () => {
   return (
-    <div className="bg-black min-h-screen flex flex-col items-center pt-48"> 
+    <div className="bg-black min-h-screen flex flex-col items-center pt-24"> {/* pt-24 adds padding for navbar */}
       <NavbarDemo />
 
      
       <div>
       <h1 className="text-white text-center text-3xl mt-6">
-      Keep your deposit. Win up to<span className="font-bold text-orange-500">$188,843 🎉</span> 
+        Connect your <span className="font-bold text-orange-500">Wallet</span> to view <span className="font-bold text-orange-500">Account</span> status
       </h1>
-      <h1 className=' mt-[40px] font-bold text-2xl text-center text-orange-500'>Current Prizes</h1>
       </div>
-  
-  <div className='flex flex-row gap-x-12'>
-      <div className='border border-orange-500 mt-[40px] p-6 w-[400px] h-[250px] rounded-md'>
-      <h1 className='text-orange-500 font-bold text-2xl text-center'>Mina</h1>
-<div className='flex justify-between items-center mt-4 w-full'>
-    <h2 className='text-white'>Prizes</h2>
-    <h2 className='text-white'>Frequency</h2>
-  </div>
-
-  <hr className='border-t border-white mt-2 w-full' />
-
-  <div className='flex justify-between items-start mt-2 w-full'>
-    <div className='flex flex-col'>
-      <p className='text-white font-medium text-xl'>$1370</p>
-      <p className='text-white font-medium text-xl'>$325</p>
-    </div>
-        <div className='flex flex-col text-right'>
-      <p className='text-white font-medium text-xl'>Every 2 months</p>
-      <p className='text-white font-medium text-xl'>4x monthly</p>
+      <div className="text-white flex flex-row gap-x-12 mt-[100px]">
+  <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center border-orange-500 border rounded-md">
+  <button className="bg-orange-600 font-medium text-white py-2 px-4 rounded border-white border">Mina</button>
+    <div className="flex flex-col items-center space-y-4 mt-2">
+      <h5 className="text-xl font-medium">Grand Prize</h5>
+      <div className="flex flex-col items-center space-y-1">
+        <h1 className="text-4xl font-bold">$1374</h1>
+        <h6 className="text-xl font-medium">~0.57WETH</h6>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div className='border border-orange-500 rounded-md mt-[40px] p-6 w-[400px] h-[250px]'>
-  <h1 className='text-orange-500 font-bold text-2xl text-center'>Ethereum</h1>
-<div className='flex justify-between items-center mt-4 w-full'>
-    <h2 className='text-white'>Prizes</h2>
-    <h2 className='text-white'>Frequency</h2>
-  </div>
-
-  <hr className='border-t border-white mt-2 w-full' />
-
-  <div className='flex justify-between items-start mt-2 w-full'>
-    <div className='flex flex-col'>
-      <p className='text-white font-medium text-xl'>$1370</p>
-      <p className='text-white font-medium text-xl'>$325</p>
-    </div>
-        <div className='flex flex-col text-right'>
-      <p className='text-white font-medium text-xl'>Every 2 months</p>
-      <p className='text-white font-medium text-xl'>4x monthly</p>
+  <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center border-orange-500 border rounded-md">
+    <button className="bg-orange-600 font-medium text-white py-2 px-4 rounded border-white border">Ethereum</button>
+    <div className="flex flex-col items-center space-y-4 mt-[5px]">
+      <h5 className="text-xl font-medium">Grand Prize</h5>
+      <div className="flex flex-col items-center space-y-1">
+        <h1 className="text-4xl font-bold">$1374</h1>
+        <h6 className="text-xl font-medium">~0.57WETH</h6>
+      </div>
     </div>
   </div>
 </div>
 
-</div>
+
       
     </div>
   )
