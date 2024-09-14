@@ -6,6 +6,7 @@ import truncateMiddle from "truncate-middle";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Chain } from "./chain";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 export interface HeaderProps {
   loading: boolean;
@@ -35,6 +36,9 @@ export default function Header({
           </div>
         </div>
         <div className="flex basis-6/12 flex-row items-center justify-end">
+        
+        <Link href='/'><button>Home</button></Link>
+        
           {/* balance */}
           {wallet && (
             <div className="mr-4 flex shrink flex-col items-end justify-center">
