@@ -26,10 +26,12 @@ export default function Header({
   blockHeight,
 }: HeaderProps) {
   return (
-    <div className="flex items-center justify-between border-b p-2 shadow-sm">
-      <div className="container flex">
-        <div className="flex basis-6/12 items-center justify-start">
-          <Image className="h-8 w-8" src={protokit} alt={"Protokit logo"} />
+    <div className="flex items-center justify-between border-b p-2 shadow-sm bg-black">
+      <div className="container flex ">
+        <div className="flex basis-6/12 items-center justify-start ">
+        <div className="bg-white">
+          <Image className="h-8 w-8 " src={protokit} alt={"Protokit logo"} />
+          </div>
           <Separator className="mx-4 h-8" orientation={"vertical"} />
           <div className="flex grow">
             <Chain height={blockHeight} />
@@ -37,12 +39,12 @@ export default function Header({
         </div>
         <div className="flex basis-6/12 flex-row items-center justify-end">
         
-        <Link href='/'><button>Home</button></Link>
+        <Link href='/'><button className="text-white">Home</button></Link>
         
           {/* balance */}
           {wallet && (
             <div className="mr-4 flex shrink flex-col items-end justify-center">
-              <div>
+              <div className="text-white">
                 <p className="text-xs">Your balance</p>
               </div>
               <div className="w-32 pt-0.5 text-right">
