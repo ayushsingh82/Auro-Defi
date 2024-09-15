@@ -35,12 +35,13 @@ export default function Header({
           <Separator className="mx-4 h-8" orientation={"vertical"} />
           <div className="flex grow">
             <Chain height={blockHeight} />
+            <Link href='/'><button className="text-white">Home</button></Link>
+        
           </div>
         </div>
         <div className="flex basis-6/12 flex-row items-center justify-end">
         
-        <Link href='/'><button className="text-white">Home</button></Link>
-        
+       
           {/* balance */}
           {wallet && (
             <div className="mr-4 flex shrink flex-col items-end justify-center">

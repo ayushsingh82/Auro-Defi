@@ -7,7 +7,7 @@ import Link from "next/link"; // Import Link from next/link
 function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center ">
-      <Navbar className="top-2" />
+      <Navbar className="top-4" />
     </div>
   );
 }
@@ -15,7 +15,7 @@ function NavbarDemo() {
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+    <div className={cn("fixed top-0 inset-x-0 max-w-2xl mx-auto z-50 ", className)}>
       <Menu setActive={setActive}>
       <Link href='/prizes'>
         <MenuItem setActive={setActive} active={active} item="Prizes">
@@ -23,7 +23,7 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         </Link>
         <Link href="/vaults">
-          <MenuItem setActive={setActive} active={active} item="Vaults">
+          <MenuItem  setActive={setActive} active={active} item="Vaults">
             <div className="text-sm grid grid-cols-2 gap-10 p-4">
               {/* Vault items */}
             </div>
