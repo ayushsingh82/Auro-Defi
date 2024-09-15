@@ -5,7 +5,7 @@ import {
     runtimeMethod,
 } from "@proto-kit/module";
 import { State, StateMap, assert } from "@proto-kit/protocol";
-import { Field, PublicKey, UInt64, Provable } from "o1js";
+import { Field, PublicKey, Provable, UInt64 } from "o1js";
 
 export const errors = {
     senderNotFrom: () => "Sender does not match 'from'",

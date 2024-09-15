@@ -1,24 +1,20 @@
 import { TestingAppChain } from "@proto-kit/sdk";
-import { method, PrivateKey } from "o1js";
-import { ERC20 } from "../../../src/runtime/modules/erc20/erc20";
-import {Pool ,PoolModule } from '../../../src/runtime/modules/lottery/lottery'
+import { PrivateKey } from "o1js";
+import { PoolModule } from '../../../src/runtime/modules/lottery/lottery'
 import { log } from "@proto-kit/common";
-import { UInt64 } from "@proto-kit/library";
 
 log.setLevel("ERROR");
 
 describe("lottery", () => {
     it("should demonstrate minting token", async () => {
         const appChain = TestingAppChain.fromRuntime({
-            PoolModule,
-            // LimitOrder
+            PoolModule
         });
 
         appChain.configurePartial({
             Runtime: {
                 PoolModule: {},
                 Balances: {},
-                // LimitOrder:{}
             },
         });
 
