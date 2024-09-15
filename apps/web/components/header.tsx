@@ -29,7 +29,7 @@ export default function Header({
     <div className="flex items-center justify-between border-b p-2 shadow-sm bg-black">
       <div className="container flex ">
         <div className="flex basis-6/12 items-center justify-start ">
-        <div className="bg-white">
+        <div className="bg-orange-500 text-white">
           <Image className="h-8 w-8 " src={protokit} alt={"Protokit logo"} />
           </div>
           <Separator className="mx-4 h-8" orientation={"vertical"} />
