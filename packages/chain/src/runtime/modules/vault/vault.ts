@@ -7,6 +7,7 @@ import {
 import { inject } from "tsyringe";
 import { assert, State } from "@proto-kit/protocol";
 import { Balances } from "../balances";
+import { YieldSource } from "./yieldSource";
 import { Balance, TokenId, UInt64 } from "@proto-kit/library";
 import { Field, Poseidon, PublicKey } from "o1js";
 
@@ -16,6 +17,7 @@ export class Vault extends RuntimeModule<{}> {
     @state() public depositShare = State.from<TokenId>(TokenId);
     public constructor(
         @inject("Balances") private balances: Balances,
+        @inject("YieldSource") private yieldSource: YieldSource
     ) {
         super();
     }
@@ -34,10 +36,7 @@ export class Vault extends RuntimeModule<{}> {
         const vaultId = await this.vaultId.get();
         const ownerBalance = await this.balances.getBalance(token, owner);
         assert(ownerBalance.greaterThanOrEqual(amount));
-        const vaultAccount = PublicKey.fromGroup(
-            Poseidon.hashToGroup([vaultId.value, token])
-        );
-        await this.balances.transfer(token, owner, vaultAccount, amount);
+        await this.yieldSource.stake(token, amount, owner);
         const depositShare = await this.depositShare.get();
         await this.balances.mintToken(depositShare.value, owner, amount);
     }
@@ -49,12 +48,7 @@ export class Vault extends RuntimeModule<{}> {
         owner: PublicKey
     ) {
         const vaultId = await this.vaultId.get();
-        const vaultAccount = PublicKey.fromGroup(
-            Poseidon.hashToGroup([vaultId.value, token])
-        );
-        const vaultBalance = await this.balances.getBalance(token, vaultAccount);
-        assert(vaultBalance.greaterThanOrEqual(amount));
-        await this.balances.transfer(token, vaultAccount, owner, amount);
+        await this.yieldSource.unstake(token, amount, owner);
         const depositShare = await this.depositShare.get();
         await this.balances.burnToken(depositShare.value, owner, amount);
     }

@@ -4,6 +4,7 @@ import { BalancesKey, TokenId, UInt64 } from "@proto-kit/library";
 import { PrivateKey } from "o1js";
 import { Vault } from "../../../src/runtime/modules/vault/vault";
 import { Balances } from "../../../src/runtime/modules/balances";
+import { YieldSource } from "../../../src/runtime/modules/vault/yieldSource";
 import { log } from "@proto-kit/common";
 
 log.setLevel("ERROR");
@@ -13,6 +14,7 @@ describe("vault", () => {
         const appChain = TestingAppChain.fromRuntime({
             Vault,
             Balances,
+            YieldSource,
         });
 
         appChain.configurePartial({
@@ -21,6 +23,7 @@ describe("vault", () => {
                     totalSupply: UInt64.from(10000),
                 },
                 Vault: {},
+                YieldSource: {},
             },
         });
 
