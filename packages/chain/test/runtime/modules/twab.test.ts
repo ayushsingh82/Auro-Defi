@@ -11,15 +11,12 @@ log.setLevel("ERROR");
 describe("twab", () => {
     it("should demonstrate minting token", async () => {
         const appChain = TestingAppChain.fromRuntime({
-            Balances,
+           Balances,
             Twab,
         });
 
         appChain.configurePartial({
             Runtime: {
-                Balances: {
-                    totalSupply: UInt64.from(10000),
-                },
                 Twab: {}
             },
         });
