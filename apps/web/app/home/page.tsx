@@ -29,8 +29,8 @@ function CardSpotlightDemo() {
       <div className="text-neutral-200 mt-4 relative z-20">
         
         <ul className="list-none  mt-2">
-          <Step title="Connect Auro Wallet" />
-          <Step title="Stake Mina" />
+          <Step title="Connect  Wallet" />
+          <Step title="Stake Mina/FLOW/USDC" />
           <Step title="Win Lottery" />
           <Step title="Withdraw amount" />
         </ul>
@@ -80,7 +80,7 @@ const CheckIcon = () => {
         <h1 className="relative z-10 text-lg md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
 
  The #1 <span className="font-bold text-orange-500">Protocol </span> on{" "}
- <span className="font-bold text-orange-500">Mina</span> for
+ <span className="font-bold text-orange-500"></span> for
  <br /> no loss lottery
 
         </h1>

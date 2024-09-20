@@ -71,7 +71,7 @@ const Page = () => {
 
         <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md   bg-gray-900">
             <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
-            <h3>Prize USDC</h3>
+            <h3>Prize MINA</h3>
             </div>
             <h3>Upto $51020</h3>
             <h3>😉😉😉</h3>
@@ -81,7 +81,7 @@ const Page = () => {
 
         <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md bg-gray-900">
             <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
-            <h3>Prize USDC</h3>
+            <h3>Prize FLOW</h3>
             </div>
             <h3>Upto $51020</h3>
             <h3>😉😉😉</h3>
