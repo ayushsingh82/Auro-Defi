@@ -50,8 +50,8 @@ const Page = () => {
       </h1>
       </div>
 
-      <div className="text-white mt-[80px] gap-y-4 flex flex-col border border-orange-500 py-[25px] px-[30px] rounded-md ">
-        <div className=" flex flex-row gap-x-[160px] text-white font-medium text-xl ">
+      <div className="text-white mt-[80px] gap-y-4 flex flex-col border border-orange-700 border-4 py-[25px] px-[30px] rounded-md ">
+        <div className=" flex flex-row gap-x-[160px] text-orange-500 font-medium text-xl ">
             <h3>Prize Vault</h3>
             <h3>Prizes</h3>
             <h3>Win chances</h3>
@@ -59,32 +59,32 @@ const Page = () => {
             <h3>Manage</h3>
         </div>
 
-        <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md  bg-gray-900">
-            <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
-            <h3>Prize USDC</h3>
-            </div>
-            <h3>Upto $51020</h3>
-            <h3>😉😉😉</h3>
-            <h3>$2.63M</h3>
-            <button className="border border-2 border-white bg-orange-600 font-semibold px-[15px] py-[5px] text-lg rounded-md">Deposit</button>
-        </div>
-
-        <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md   bg-gray-900">
+        <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md  bg-black">
             <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
             <h3>Prize MINA</h3>
             </div>
             <h3>Upto $51020</h3>
-            <h3>😉😉😉</h3>
+            <h3>46%</h3>
             <h3>$2.63M</h3>
             <button className="border border-2 border-white bg-orange-600 font-semibold px-[15px] py-[5px] text-lg rounded-md">Deposit</button>
         </div>
 
-        <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md bg-gray-900">
-            <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
-            <h3>Prize FLOW</h3>
+        <div className="flex flex-row gap-x-[160px] border border-green-700 py-[15px] px-[25px] rounded-md   bg-black">
+            <div className="border border-2 border-green-700 px-[10px] py-[5px] rounded-md bg-green-900">
+            <h3 className="">Prize FLOW</h3>
             </div>
             <h3>Upto $51020</h3>
-            <h3>😉😉😉</h3>
+            <h3>41%</h3>
+            <h3>$2.63M</h3>
+            <button className="border border-2 border-green-700 bg-green-900 font-semibold px-[15px] py-[5px] text-lg rounded-md">Deposit</button>
+        </div>
+
+        <div className="flex flex-row gap-x-[160px] border border-white py-[15px] px-[25px] rounded-md bg-black">
+            <div className="border border-2 border-white px-[10px] py-[5px] rounded-md">
+            <h3>Prize USDC</h3>
+            </div>
+            <h3>Upto $51020</h3>
+            <h3>29%</h3>
             <h3>$2.63M</h3>
             <button className="border border-2 border-white bg-orange-600 font-semibold px-[15px] py-[5px] text-lg rounded-md">Deposit</button>
         </div>

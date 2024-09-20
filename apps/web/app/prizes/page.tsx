@@ -21,54 +21,13 @@ function NavbarDemo() {
       >
         <Menu setActive={setActive}>
         <Link href='/prizes'>
-          <MenuItem setActive={setActive} active={active} item="Prizes">
-            {/* <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/web-dev">Web Development</HoveredLink>
-              <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-              <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/branding">Branding</HoveredLink>
-            </div> */}
-          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Prizes"></MenuItem>
           </Link>
           <Link href='/vaults'>
-          <MenuItem setActive={setActive} active={active} item="Vaults">
-            <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-              {/* <ProductItem
-                title="Algochurn"
-                href="https://algochurn.com"
-                src="https://assets.aceternity.com/demos/algochurn.webp"
-                description="Prepare for tech interviews like never before."
-              />
-              <ProductItem
-                title="Tailwind Master Kit"
-                href="https://tailwindmasterkit.com"
-                src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                description="Production ready Tailwind css components for your next project"
-              />
-              <ProductItem
-                title="Moonbeam"
-                href="https://gomoonbeam.com"
-                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                description="Never write from scratch again. Go from idea to blog in minutes."
-              />
-              <ProductItem
-                title="Rogue"
-                href="https://userogue.com"
-                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-              /> */}
-            </div>
-          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Vaults"></MenuItem>
          </Link>
          <Link href='/accounts'>
-          <MenuItem setActive={setActive} active={active} item="Accounts">
-            <div className="flex flex-col space-y-4 text-sm">
-              {/* <HoveredLink href="/hobby">Hobby</HoveredLink>
-              <HoveredLink href="/individual">Individual</HoveredLink>
-              <HoveredLink href="/team">Team</HoveredLink>
-              <HoveredLink href="/enterprise">Enterprise</HoveredLink> */}
-            </div>
-          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Accounts"></MenuItem>
           </Link>
           
         </Menu>
@@ -112,8 +71,31 @@ const page = () => {
 </div>
 
 
+
+<div className='border border-green-700 rounded-md mt-[40px] p-6 w-[400px] h-[250px]'>
+  <h1 className='text-green-500 font-bold text-2xl text-center'>FLOW</h1>
+<div className='flex justify-between items-center mt-4 w-full'>
+    <h2 className='text-white'>Prizes</h2>
+    <h2 className='text-white'>Frequency</h2>
+  </div>
+
+  <hr className='border-t border-white mt-2 w-full' />
+
+  <div className='flex justify-between items-start mt-2 w-full'>
+    <div className='flex flex-col'>
+      <p className='text-white font-medium text-xl'>$1370</p>
+      <p className='text-white font-medium text-xl'>$325</p>
+    </div>
+        <div className='flex flex-col text-right'>
+      <p className='text-white font-medium text-xl'>Every 2 months</p>
+      <p className='text-white font-medium text-xl'>4x monthly</p>
+    </div>
+  </div>
+</div>
+
+{/* New Flow Div */}
 <div className='border border-orange-500 rounded-md mt-[40px] p-6 w-[400px] h-[250px]'>
-  <h1 className='text-orange-500 font-bold text-2xl text-center'>Ethereum</h1>
+  <h1 className='text-orange-500 font-bold text-2xl text-center'>USDC</h1>
 <div className='flex justify-between items-center mt-4 w-full'>
     <h2 className='text-white'>Prizes</h2>
     <h2 className='text-white'>Frequency</h2>

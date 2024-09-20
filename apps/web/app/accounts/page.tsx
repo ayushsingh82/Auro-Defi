@@ -48,8 +48,8 @@ const page = () => {
         </h1>
       </div>
       <div className="text-white flex flex-row gap-x-12 mt-[100px]">
-        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center border-orange-500 border rounded-md">
-          <button className="bg-orange-600 font-medium text-white py-2 px-4 rounded border-white border">Mina</button>
+        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col border-white justify-between items-center border-2 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-700 border rounded-md">
+          <button className="bg-black font-medium text-white py-2 px-4 rounded border-white border">Mina</button>
           <div className="flex flex-col items-center space-y-4 mt-2">
             <h5 className="text-xl font-medium">Grand Prize</h5>
             <div className="flex flex-col items-center space-y-1">
@@ -59,8 +59,8 @@ const page = () => {
           </div>
         </div>
 
-        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center border-orange-500 border rounded-md">
-          <button className="bg-orange-600 font-medium text-white py-2 px-4 rounded border-white border">FLOW</button>
+        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between border-4 items-center bg-gradient-to-r from-green-500 via-green-700 to-green-900 border rounded-md  ">
+          <button className="bg-black font-medium text-white py-2 px-4 rounded border-white border">FLOW</button>
           <div className="flex flex-col items-center space-y-4 mt-[5px]">
             <h5 className="text-xl font-medium">Grand Prize</h5>
             <div className="flex flex-col items-center space-y-1">
@@ -71,8 +71,8 @@ const page = () => {
         </div>
 
         {/* New Div for Polygon */}
-        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center border-orange-500 border rounded-md">
-          <button className="bg-orange-600 font-medium text-white py-2 px-4 rounded border-white border">USDC</button>
+        <div className="bg-black p-14 w-[300px] h-[300px] flex flex-col justify-between items-center bg-gradient-to-r from-orange-700 via-orange-500 to-orange-600 border-white border-2 border rounded-md">
+          <button className="bg-black font-medium text-white py-2 px-4 rounded border-white border">USDC</button>
           <div className="flex flex-col items-center space-y-4 mt-[5px]">
             <h5 className="text-xl font-medium">Grand Prize</h5>
             <div className="flex flex-col items-center space-y-1">
