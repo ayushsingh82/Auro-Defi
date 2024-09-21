@@ -35,7 +35,7 @@ export default function Header({
           <Separator className="mx-4 h-8" orientation={"vertical"} />
           <div className="flex grow">
             <Chain height={blockHeight} />
-            <Link href='/'><button className="text-white">Home</button></Link>
+            <Link href='/home'><button className="text-white">Home</button></Link>
         
           </div>
         </div>
