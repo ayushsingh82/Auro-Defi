@@ -38,6 +38,7 @@ export const useBalancesStore = create<
   immer((set) => ({
     loading: Boolean(false),
     balances: {},
+    deposit:{},
     async loadBalance(client: Client, address: string) {
       set((state) => {
         state.loading = true;
@@ -50,12 +51,12 @@ export const useBalancesStore = create<
 
       const vault = client.runtime.resolve("Vault");
 
-      // const tx = await client.transaction(sender, async () => {
-      //   await vault.deposit(tokenId,amount,publicKey);
-      // })
+      const tx = await client.transaction(sender, async () => {
+        await vault.deposit(tokenId,amount,publicKey);
+      })
 
-      // await tx.sign();
-      // await tx.send();
+      await tx.sign();
+      await tx.send();
 
       set((state) => {
         state.loading = false;
@@ -116,6 +117,14 @@ export const usedeposit=()=>{
   const balances = useBalancesStore();
   const wallet = useWalletStore();
 
+  return useCallback(async () => {
+    if (!client.client || !wallet.wallet) return;
 
+    const pendingTransaction = await balances.faucet(
+      client.client,
+      wallet.wallet,
+    );
 
+    wallet.addPendingTransaction(pendingTransaction);
+  }, [client.client, wallet.wallet]);
 }

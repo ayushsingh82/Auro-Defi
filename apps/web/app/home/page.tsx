@@ -93,7 +93,7 @@ function BackgroundBeamsDemo() {
       {/* Explore Button */}
       <div className="absolute top-2 right-2 m-4">
         <Link href="/vaults">
-          <button className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-lg border border-2 border-white transition duration-300">
+          <button className="px-4 py-2 bg-orange-700 text-white text-semibold  rounded-md shadow-lg border border-2 border-white transition duration-300">
             Explore
           </button>
         </Link>
