@@ -50,12 +50,12 @@ export const useBalancesStore = create<
 
       const vault = client.runtime.resolve("Vault");
 
-      const tx = await client.transaction(sender, async () => {
-        await vault.deposit(tokenId,amount,publicKey);
-      })
+      // const tx = await client.transaction(sender, async () => {
+      //   await vault.deposit(tokenId,amount,publicKey);
+      // })
 
-      await tx.sign();
-      await tx.send();
+      // await tx.sign();
+      // await tx.send();
 
       set((state) => {
         state.loading = false;
@@ -117,5 +117,5 @@ export const usedeposit=()=>{
   const wallet = useWalletStore();
 
 
-  
+
 }

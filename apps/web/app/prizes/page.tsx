@@ -64,7 +64,7 @@ const page = () => {
       <p className='text-white font-medium text-xl'>$325</p>
     </div>
         <div className='flex flex-col text-right'>
-      <p className='text-white font-medium text-xl'>Every 2 months</p>
+      <p className='text-white font-medium text-xl'>Every  month</p>
       <p className='text-white font-medium text-xl'>4x monthly</p>
     </div>
   </div>
@@ -83,11 +83,11 @@ const page = () => {
 
   <div className='flex justify-between items-start mt-2 w-full'>
     <div className='flex flex-col'>
-      <p className='text-white font-medium text-xl'>$1370</p>
-      <p className='text-white font-medium text-xl'>$325</p>
+      <p className='text-white font-medium text-xl'>$1180</p>
+      <p className='text-white font-medium text-xl'>$275</p>
     </div>
         <div className='flex flex-col text-right'>
-      <p className='text-white font-medium text-xl'>Every 2 months</p>
+      <p className='text-white font-medium text-xl'>Every  month</p>
       <p className='text-white font-medium text-xl'>4x monthly</p>
     </div>
   </div>
@@ -105,11 +105,11 @@ const page = () => {
 
   <div className='flex justify-between items-start mt-2 w-full'>
     <div className='flex flex-col'>
-      <p className='text-white font-medium text-xl'>$1370</p>
-      <p className='text-white font-medium text-xl'>$325</p>
+      <p className='text-white font-medium text-xl'>$1670</p>
+      <p className='text-white font-medium text-xl'>$425</p>
     </div>
         <div className='flex flex-col text-right'>
-      <p className='text-white font-medium text-xl'>Every 2 months</p>
+      <p className='text-white font-medium text-xl'>Every  month</p>
       <p className='text-white font-medium text-xl'>4x monthly</p>
     </div>
   </div>
